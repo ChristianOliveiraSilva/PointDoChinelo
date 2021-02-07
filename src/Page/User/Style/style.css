@@ -1,0 +1,17 @@
+
+
+.mobile-container-login {
+    padding: 12px;
+}
+
+@media (min-width: 600px) {
+
+    .mobile-container-login {
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.pointer {
+    cursor: pointer;
+}

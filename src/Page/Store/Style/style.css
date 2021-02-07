@@ -1,0 +1,10 @@
+
+
+.section-secondary {
+    cursor: pointer;
+    padding: 6px;
+}
+
+.section-secondary:hover {
+    background-color: darkgrey;
+}

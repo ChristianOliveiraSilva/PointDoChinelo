@@ -1,0 +1,39 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+a.link {
+  text-decoration: none;
+  color: blue;
+}
+
+body { 
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-weight: 700;
+}
+
+/* class */
+
+.header-main {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+}
+  
+.pricing-header {
+  max-width: 700px;
+}
