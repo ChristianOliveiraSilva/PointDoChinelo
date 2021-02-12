@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
+import { JWTContext } from "../Contexts/JWTContext";
 
-function UserGreeting(props) {
+function UserNav(props) {
     return <h1>Welcome back!</h1>;
 }
 
-function GuestGreeting(props) {
+function GuestNav(props) {
     return (
         <div>
             <Link className="btn btn-outline-primary" to="/login">Logar</Link>
@@ -13,12 +14,12 @@ function GuestGreeting(props) {
     );
 }
 
-function Greeting(props) {
-    const isLoggedIn = false;
+function Nav(props) {
+    const isLoggedIn = props.isLoggedIn;
     if (isLoggedIn) {
-        return <UserGreeting />;
+        return <UserNav />;
     }
-    return <GuestGreeting />;
+    return <GuestNav />;
 }
 
 function Header() {
@@ -29,7 +30,10 @@ function Header() {
                 <Link className="p-2 text-dark" to="/store">Loja</Link>
                 <Link className="p-2 text-dark" to="/course">Cursos</Link>
             </nav>
-            <Greeting />
+            
+            <JWTContext.Consumer>
+            { ({JWT}) => <Nav isLoggedIn={JWT}/> }
+            </JWTContext.Consumer>
         </header>
     )
   }

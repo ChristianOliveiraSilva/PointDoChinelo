@@ -26,11 +26,11 @@ function Base() {
           <hr />
           <form className="shadow p-2">
             <p className="m-0">Nome:</p>
-            <input type="text" class="form-control" name="name" placeholder="Nome"/>
+            <input type="text" className="form-control" name="name" placeholder="Nome"/>
             <p className="m-0">E-mail:</p>
-            <input type="mail" class="form-control" name="mail" placeholder="E-mail"/>
+            <input type="mail" className="form-control" name="mail" placeholder="E-mail"/>
             <p className="m-0">Mensagem:</p>
-            <input type="text" class="form-control" name="msg" placeholder="Mensagem"/>
+            <input type="text" className="form-control" name="msg" placeholder="Mensagem"/>
             <button type="submit" className="btn btn-success mt-3" onClick={() => alert('Mensagem enviada')}>entrar em contato</button>
           </form>
         </div>

@@ -65,7 +65,7 @@ function Showcase() {
     <div className="container marketing">
       <div className="row">
         <div className="col-lg-4">
-          <i class='fas fa-video' style={{fontSize: '4em'}}></i>
+          <i className='fas fa-video' style={{fontSize: '4em'}}></i>
           <h2 className="fw-bold">Faça o Curso Desejado!</h2>
           <p>
             Compre o material do curso e o ganhe de graça!
@@ -73,7 +73,7 @@ function Showcase() {
           <p><a className="btn btn-secondary" href="#cursos" role="button">Veja os cursos »</a></p>
         </div>
         <div className="col-lg-4">
-          <i class='fas fa-american-sign-language-interpreting' style={{fontSize: '4.4em'}} ></i>
+          <i className='fas fa-american-sign-language-interpreting' style={{fontSize: '4.4em'}} ></i>
           <h2 className="fw-bold">Crie seu Artesanato!</h2>
           <p>
             Após fazer o curso você deve praticar! Faça os produtos da aula com o material da nossa <a href="/store" className="link">loja</a>
@@ -81,7 +81,7 @@ function Showcase() {
           <p><a href="/store" className="btn btn-secondary" role="button">Veja a loja »</a></p>
         </div>
         <div className="col-lg-4">
-          <i class='fas fa-donate' style={{fontSize: '4em'}}></i>
+          <i className='fas fa-donate' style={{fontSize: '4em'}}></i>
           <h2 className="fw-bold">Venda e faça dinheiro!</h2>
           <p>
           <small>Agora você deve criar seus produtos baseados no que te ensinamos! Mas relaxa... O curso é pra sempre estará aqui para você rever!</small>

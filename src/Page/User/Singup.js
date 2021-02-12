@@ -1,5 +1,6 @@
 import './Style/style.css'
 import React from 'react'
+import { JWTContext } from '../../Contexts/JWTContext'
 
 class Singup extends React.Component {
   constructor(props) {
@@ -27,6 +28,7 @@ class Singup extends React.Component {
       [target.name]: target.value
     })
   }
+
   handleSubmit(event) {
     event.preventDefault()
     this.blockRequest = false;
@@ -65,6 +67,7 @@ class Singup extends React.Component {
   saveUser(user) {
     console.log(user);
     // implementar 
+    this.context.changeJWT(1)
   }
 
   render () {
@@ -102,5 +105,6 @@ class Singup extends React.Component {
     )
   }
 }
+Singup.contextType = JWTContext
 
 export default Singup

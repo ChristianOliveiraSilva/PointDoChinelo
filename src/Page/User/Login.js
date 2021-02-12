@@ -1,6 +1,6 @@
 import './Style/style.css'
 import React from 'react'
-
+import { JWTContext } from '../../Contexts/JWTContext'
 
 class Login extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class Login extends React.Component {
 
   handleSubmit(event) {
     event.preventDefault()
-
+    this.context.changeJWT(Math.random())
   }
 
   render() {
@@ -49,5 +49,6 @@ class Login extends React.Component {
     )
   }
 }
+Login.contextType = JWTContext
 
 export default Login

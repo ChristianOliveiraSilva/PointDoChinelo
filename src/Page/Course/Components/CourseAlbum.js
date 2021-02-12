@@ -17,7 +17,7 @@ function AlbumItem(props) {
               <Link to={'/course/'+props.id}>
                 <button type="button" className="btn btn-sm btn-outline-secondary">Ver Curso</button>
               </Link>
-              <Link>
+              <Link to="payment">
                 <button type="button" className="btn btn-sm btn-outline-secondary">Comprar</button>
               </Link>
             </div>
