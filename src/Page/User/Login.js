@@ -25,6 +25,7 @@ class Login extends React.Component {
   handleSubmit(event) {
     event.preventDefault()
     this.context.changeJWT(Math.random())
+    window.location.href = "/";
   }
 
   render() {

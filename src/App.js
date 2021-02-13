@@ -14,6 +14,8 @@ import Course from './Page/Course/Course';
 import Store from './Page/Store';
 import ProductComponent from './Page/Store/Product';
 import Login from './Page/User/Login';
+import Profile from './Page/User/Profile';
+
 import Logout from './Page/User/Logout';
 import Singup from './Page/User/Singup';
 
@@ -68,6 +70,7 @@ class App extends React.Component {
               <Route path="/payment" exact><Payment /></Route>
               <Route path="/logout" exact><Logout /></Route>
               <Route path="/login" exact><Login /></Route>
+              <Route path="/profile" exact><Profile /></Route>
               <Route path="/singup" exact><Singup /></Route>
               <Route path="*"><h1>bla bla 404</h1></Route>
             </Switch>

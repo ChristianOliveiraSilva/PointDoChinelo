@@ -17,8 +17,9 @@ class Logout extends React.Component {
 
     render() {
         return (
-            <main className="form-signin m-auto mobile-container-login">
-                <button className="btn btn-primary" onClick={this.removeJWT}>Deseja Sair mesmo?</button>
+            <main className="form-signin m-auto mobile-container-login text-center">
+                <button className="btn btn-primary" onClick={this.removeJWT}>Deseja sair mesmo?</button>
+                <img className="mt-5 m-auto d-block img-thumbnail" src="/img/logo.jpg" alt="logo" title="logo" />
             </main>
         )
   }

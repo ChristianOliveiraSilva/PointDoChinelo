@@ -2,15 +2,20 @@ import { Link } from "react-router-dom";
 import { JWTContext } from "../Contexts/JWTContext";
 
 function UserNav(props) {
-    return <h1>Welcome back!</h1>;
+    return (
+        <>
+            <Link className="btn" to="/profile">Perfil</Link>
+            <Link className="btn" to="/logout">Sair</Link>
+        </>
+    )
 }
 
 function GuestNav(props) {
     return (
-        <div>
+        <>
             <Link className="btn btn-outline-primary" to="/login">Logar</Link>
             <Link className="p-2 text-dark" to="/singup">cadastrar</Link>
-        </div>
+        </>
     );
 }
 
