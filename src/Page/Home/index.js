@@ -1,4 +1,13 @@
+import Cart from "../../Feature/Cart";
+import Product from "../../Model/Product";
+
 function Home() {
+
+  const cart = new Cart();
+  cart.add(new Product('id', 'name', 5))
+  console.log({a: cart.list()})
+
+
   return (
     <div className="main">
       <main className="container">

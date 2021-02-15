@@ -2,15 +2,17 @@
 import Product from "../Model/Product";
 
 class Cart {
-
     constructor() {
         this.local = window.localStorage
+        this.localStorageParam = 'products'
         console.log(this.local);
     }
 
     add(product) {
-        console.log(product instanceof Product)
-        this.local.setItem('product', product)
+        if (product instanceof Product) {
+            this.local.setItem(this.localStorageParam, product)
+            this.local.setItem(this.localStorageParam, {a: 1})
+        }
     }
 
     remove(productId) {
@@ -22,8 +24,7 @@ class Cart {
     }
 
     list() {
-        const product = this.local.getItem('product')
-        console.log(product instanceof Product)
+        const product = this.local.getItem(this.localStorageParam)
         return product
     }
 
